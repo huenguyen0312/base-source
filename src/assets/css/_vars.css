@@ -1,0 +1,18 @@
+/* ---
+Media Query
+--- */
+
+/* BreakPoints */
+@custom-media --sm screen and (width >= 480px);
+@custom-media --md screen and (width >= 981px);
+@custom-media --lg screen and (width >= 1200px);
+@custom-media --lg-over screen and (width >= 1200px);
+
+/* BreakPoints below */
+@custom-media --sm-below screen and (width < 480px);
+@custom-media --md-below screen and (width < 981px);
+@custom-media --lg-below screen and (width < 1200px);
+
+/* Hover */
+@custom-media --hover screen and (any-hover: hover);
+@custom-media --no-hover screen and (any-hover: none);

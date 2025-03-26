@@ -1,0 +1,87 @@
+/* foundation */
+:target {
+  scroll-margin-block: 24px;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  background-color: var(--color-white);
+  font-size: 100%;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+  scroll-behavior: smooth;
+  font-feature-settings: "palt" 1;
+  -webkit-text-size-adjust: 100%; /* stylelint-disable-line property-no-vendor-prefix */
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+  background-color: transparent;
+  color: var(--color-black);
+  font-family: var(--base-font-family);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  letter-spacing: 0.04em;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
+  margin: 16px 0;
+  padding-left: 22px;
+  list-style: none;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  margin: 16px 0;
+  padding-left: 22px;
+}
+
+li {
+  display: list-item;
+}
+
+
+button:not(:disabled, .disabled) {
+  cursor: pointer;
+}
+
+a {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  color: var(--color-black);
+  text-decoration: underline;
+
+  @media (--no-hover) {
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  @media (--hover) {
+    &:hover {
+      color: var(--primary-active-color);
+    }
+  }
+}
