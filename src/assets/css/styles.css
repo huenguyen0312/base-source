@@ -8,4 +8,6 @@
 @import url("_root-vars.css");
 @import url("foundation.css");
 
-/* Components/module */
+/* Components/partials */
+@import url("@components/partials/link.css");
+@import url("@components/partials/icon.css");
