@@ -3,7 +3,5 @@ export class Tabs {
     this.init();
   }
 
-  private init() {
-
-  }
+  private init() {}
 }

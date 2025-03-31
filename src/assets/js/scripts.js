@@ -1,11 +1,10 @@
+import { Menu } from "./_module/Menu";
 import { Tabs } from "./_module/Tabs";
 
 function init() {
-  const selectObserver = new SelectObserver();
-  selectObserver.start();
-
   window.addEventListener("DOMContentLoaded", () => {
     const tabs = new Tabs();
+    const menu = new Menu();
   });
 }
 

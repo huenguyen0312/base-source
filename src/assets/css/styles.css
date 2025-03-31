@@ -9,3 +9,4 @@
 @import url("foundation.css");
 
 /* Components/module */
+@import url("@components/partials/header.css");
